@@ -1,4 +1,4 @@
-@import "bootstrap";
+/*REUSABLE STYLES */
 
 img {
     max-width: 100%;
@@ -33,7 +33,7 @@ ul.no-indent {
 /* SHARED PAGE STYLES */
 
 body {
-    background-color:#80c2eb;
+    background-color:#80c2eb;   
     background-size: 25%;
     font-family: 'Open Sans', sans-serif;
 }
@@ -226,3 +226,4 @@ body {
 
 
 }
+
