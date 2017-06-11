@@ -1,17 +1,8 @@
 <section id="content-details" class="row clearfix">
     <article id="details-article" class="col-sm-8">
-        <h1 id="article-title">Your Product <span class="font-weight-light">Product Name</span></h1>
+        <h1 id="article-title"><%= @product.title %><br> <span class="font-weight-light"><%= @product.subtitle %></span></h1>
 
-
-        <p>Lorem ipsum dolor sit amet, in nam feugiat eleifend. Sea an possit offendit definiebas, usu cu aeque mediocritatem. Vis constituam suscipiantur ad, cum duis concludaturque no. Sea vocent consulatu at.</p>
-
-        <p>Lorem ipsum dolor sit amet, pri id tractatos torquatos, eruditi alienum eam ad. Sint graeci mel te. Ex eius corrumpit.</p>
-        <p><strong>What You Get</strong></p>
-        <ul class="no-indent">
-            <li>Lorem ipsum dolor sit.</li>
-            <li>Lorem ipsum dolor sit amet, cum.</li>
-            <li>Lorem ipsum dolor sit amet, quo ne etiam.</li>
-        </ul>
+        <%= raw @product.description %>
     </article>
     <aside id="details-aside" class="col-sm-4">
 
@@ -23,14 +14,14 @@
             </div>
           <% end %>
           <label class="amount">
-            <span>Amount: $5.00</span>
+            <span>$<%= @product.price %></span>
           </label>
         </article>
 
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
                 data-description="A month's subscription"
-                data-amount="500"
+                data-amount= <%= @product.price %>
                 data-locale="auto"></script>
         <% end %>
 
