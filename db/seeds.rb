@@ -12,6 +12,7 @@ niceCat = Product.create(title: "Quality Kitty",
                          price: '4.99',
                          sku: "KittyOne",
                          download_url: "https://s3.us-east-2.amazonaws.com/rails-learn-payment-app/kitten.jpg",
+                         image_name: 'cat',
                          details: 'A really nice cat',
                          description: %{<p>It's a cat</p>}
                          )
@@ -21,6 +22,7 @@ niceDog = Product.create(title: "Quality Dog",
                         price: '4.99',
                         sku: "DoggyOne",
                         download_url: "https://s3.us-east-2.amazonaws.com/rails-learn-payment-app/dog.png",
+                        image_name: 'dog',
                         details: 'A really nice dog',
                         description: %{<p>It's a dog</p>}
                         )
