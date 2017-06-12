@@ -1,0 +1,21 @@
+<section id="content-deatails" class="row clearfix">
+  <article id="details-atticle" class="col-sm-8">
+    <h1 id="article-title">Look at our animals</h1>
+  </article>
+</section>
+
+</details>
+
+<section id="products">
+  <% @products.each do |product| %>
+  <div class="product clearfix">
+    <a href="product-detail.html">
+      <div class="product-image-container">
+        <img src="<%= asset_path product.image_name %>" alt="<%= product.title %>">
+        <span class="product-price"><%= product.price %></span>
+      </div>
+      <p class="product-title"><%= product.title %></p>
+    </a>
+  </div>
+  <% end %>
+</section>

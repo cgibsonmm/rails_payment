@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   root 'pages#home'
   resources :charges
+  resources :products, only: [:index]
   resources :purchases, only: [:show]
 
 end
