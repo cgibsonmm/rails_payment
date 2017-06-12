@@ -6,7 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+# remove this comment if issues with admin seed
+# AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
 
 niceCat = Product.create(title: "Quality Kitty",
                          subtitle: "Learn App Code",
@@ -14,6 +15,7 @@ niceCat = Product.create(title: "Quality Kitty",
                          sku: "KittyOne",
                          download_url: "https://s3.us-east-2.amazonaws.com/rails-learn-payment-app/kitten.jpg",
                          image_name: 'cat',
+                         info: 'This is a test cat item, there is not a real cat for sale.',
                          details: 'A really nice cat',
                          description: %{<p>It's a cat</p>}
                          )
@@ -24,6 +26,7 @@ niceDog = Product.create(title: "Quality Dog",
                         sku: "DoggyOne",
                         download_url: "https://s3.us-east-2.amazonaws.com/rails-learn-payment-app/dog.png",
                         image_name: 'dog',
+                        info: 'This is a test dog item, there is not a real dog for sale.',
                         details: 'A really nice dog',
                         description: %{<p>It's a dog</p>}
                         )
