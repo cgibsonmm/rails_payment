@@ -25,7 +25,7 @@ niceDog = Product.create(title: "Quality Dog",
                         price: '4.99',
                         sku: "DoggyOne",
                         download_url: "https://s3.us-east-2.amazonaws.com/rails-learn-payment-app/dog.png",
-                        image_name: 'dog.png',
+                        image_name: 'dog.jpeg',
                         info: 'This is a test dog item, there is not a real dog for sale.',
                         details: 'A really nice dog',
                         description: %{<p>It's a dog</p>}
