@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # remove this comment if issues with admin seed
-# AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
 
 niceCat = Product.create(title: "Quality Kitty",
                          subtitle: "Learn App Code",
